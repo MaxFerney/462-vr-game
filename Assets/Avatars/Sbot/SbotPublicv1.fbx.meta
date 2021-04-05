@@ -1,149 +1,425 @@
 fileFormatVersion: 2
 guid: 7800728fc1d193e43bc3e178d113af4e
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature
-    100002: Body
-    100004: Chest
-    100006: Head
-    100008: Head_end
-    100010: Hips
-    100012: IndexFinger1_L
-    100014: IndexFinger1_R
-    100016: IndexFinger2_L
-    100018: IndexFinger2_R
-    100020: IndexFinger3_L
-    100022: IndexFinger3_L_end
-    100024: IndexFinger3_R
-    100026: IndexFinger3_R_end
-    100028: Left ankle
-    100030: Left arm
-    100032: Left elbow
-    100034: Left knee
-    100036: Left leg
-    100038: Left shoulder
-    100040: Left toe
-    100042: Left toe_end
-    100044: Left wrist
-    100046: LittleFinger1_L
-    100048: LittleFinger1_R
-    100050: LittleFinger2_L
-    100052: LittleFinger2_R
-    100054: LittleFinger3_L
-    100056: LittleFinger3_L_end
-    100058: LittleFinger3_R
-    100060: LittleFinger3_R_end
-    100062: MiddleFinger1_L
-    100064: MiddleFinger1_R
-    100066: MiddleFinger2_L
-    100068: MiddleFinger2_R
-    100070: MiddleFinger3_L
-    100072: MiddleFinger3_L_end
-    100074: MiddleFinger3_R
-    100076: MiddleFinger3_R_end
-    100078: Neck
-    100080: Right ankle
-    100082: Right arm
-    100084: Right elbow
-    100086: Right knee
-    100088: Right leg
-    100090: Right shoulder
-    100092: Right toe
-    100094: Right toe_end
-    100096: Right wrist
-    100098: RingFinger1_L
-    100100: RingFinger1_R
-    100102: RingFinger2_L
-    100104: RingFinger2_R
-    100106: RingFinger3_L
-    100108: RingFinger3_L_end
-    100110: RingFinger3_R
-    100112: RingFinger3_R_end
-    100114: //RootNode
-    100116: Spine
-    100118: Thumb0_L
-    100120: Thumb0_R
-    100122: Thumb1_L
-    100124: Thumb1_R
-    100126: Thumb2_L
-    100128: Thumb2_L_end
-    100130: Thumb2_R
-    100132: Thumb2_R_end
-    400000: Armature
-    400002: Body
-    400004: Chest
-    400006: Head
-    400008: Head_end
-    400010: Hips
-    400012: IndexFinger1_L
-    400014: IndexFinger1_R
-    400016: IndexFinger2_L
-    400018: IndexFinger2_R
-    400020: IndexFinger3_L
-    400022: IndexFinger3_L_end
-    400024: IndexFinger3_R
-    400026: IndexFinger3_R_end
-    400028: Left ankle
-    400030: Left arm
-    400032: Left elbow
-    400034: Left knee
-    400036: Left leg
-    400038: Left shoulder
-    400040: Left toe
-    400042: Left toe_end
-    400044: Left wrist
-    400046: LittleFinger1_L
-    400048: LittleFinger1_R
-    400050: LittleFinger2_L
-    400052: LittleFinger2_R
-    400054: LittleFinger3_L
-    400056: LittleFinger3_L_end
-    400058: LittleFinger3_R
-    400060: LittleFinger3_R_end
-    400062: MiddleFinger1_L
-    400064: MiddleFinger1_R
-    400066: MiddleFinger2_L
-    400068: MiddleFinger2_R
-    400070: MiddleFinger3_L
-    400072: MiddleFinger3_L_end
-    400074: MiddleFinger3_R
-    400076: MiddleFinger3_R_end
-    400078: Neck
-    400080: Right ankle
-    400082: Right arm
-    400084: Right elbow
-    400086: Right knee
-    400088: Right leg
-    400090: Right shoulder
-    400092: Right toe
-    400094: Right toe_end
-    400096: Right wrist
-    400098: RingFinger1_L
-    400100: RingFinger1_R
-    400102: RingFinger2_L
-    400104: RingFinger2_R
-    400106: RingFinger3_L
-    400108: RingFinger3_L_end
-    400110: RingFinger3_R
-    400112: RingFinger3_R_end
-    400114: //RootNode
-    400116: Spine
-    400118: Thumb0_L
-    400120: Thumb0_R
-    400122: Thumb1_L
-    400124: Thumb1_R
-    400126: Thumb2_L
-    400128: Thumb2_L_end
-    400130: Thumb2_R
-    400132: Thumb2_R_end
-    2100000: Material.006
-    4300000: Body
-    9500000: //RootNode
-    13700000: Body
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Body
+  - first:
+      1: 100004
+    second: Chest
+  - first:
+      1: 100006
+    second: Head
+  - first:
+      1: 100008
+    second: Head_end
+  - first:
+      1: 100010
+    second: Hips
+  - first:
+      1: 100012
+    second: IndexFinger1_L
+  - first:
+      1: 100014
+    second: IndexFinger1_R
+  - first:
+      1: 100016
+    second: IndexFinger2_L
+  - first:
+      1: 100018
+    second: IndexFinger2_R
+  - first:
+      1: 100020
+    second: IndexFinger3_L
+  - first:
+      1: 100022
+    second: IndexFinger3_L_end
+  - first:
+      1: 100024
+    second: IndexFinger3_R
+  - first:
+      1: 100026
+    second: IndexFinger3_R_end
+  - first:
+      1: 100028
+    second: Left ankle
+  - first:
+      1: 100030
+    second: Left arm
+  - first:
+      1: 100032
+    second: Left elbow
+  - first:
+      1: 100034
+    second: Left knee
+  - first:
+      1: 100036
+    second: Left leg
+  - first:
+      1: 100038
+    second: Left shoulder
+  - first:
+      1: 100040
+    second: Left toe
+  - first:
+      1: 100042
+    second: Left toe_end
+  - first:
+      1: 100044
+    second: Left wrist
+  - first:
+      1: 100046
+    second: LittleFinger1_L
+  - first:
+      1: 100048
+    second: LittleFinger1_R
+  - first:
+      1: 100050
+    second: LittleFinger2_L
+  - first:
+      1: 100052
+    second: LittleFinger2_R
+  - first:
+      1: 100054
+    second: LittleFinger3_L
+  - first:
+      1: 100056
+    second: LittleFinger3_L_end
+  - first:
+      1: 100058
+    second: LittleFinger3_R
+  - first:
+      1: 100060
+    second: LittleFinger3_R_end
+  - first:
+      1: 100062
+    second: MiddleFinger1_L
+  - first:
+      1: 100064
+    second: MiddleFinger1_R
+  - first:
+      1: 100066
+    second: MiddleFinger2_L
+  - first:
+      1: 100068
+    second: MiddleFinger2_R
+  - first:
+      1: 100070
+    second: MiddleFinger3_L
+  - first:
+      1: 100072
+    second: MiddleFinger3_L_end
+  - first:
+      1: 100074
+    second: MiddleFinger3_R
+  - first:
+      1: 100076
+    second: MiddleFinger3_R_end
+  - first:
+      1: 100078
+    second: Neck
+  - first:
+      1: 100080
+    second: Right ankle
+  - first:
+      1: 100082
+    second: Right arm
+  - first:
+      1: 100084
+    second: Right elbow
+  - first:
+      1: 100086
+    second: Right knee
+  - first:
+      1: 100088
+    second: Right leg
+  - first:
+      1: 100090
+    second: Right shoulder
+  - first:
+      1: 100092
+    second: Right toe
+  - first:
+      1: 100094
+    second: Right toe_end
+  - first:
+      1: 100096
+    second: Right wrist
+  - first:
+      1: 100098
+    second: RingFinger1_L
+  - first:
+      1: 100100
+    second: RingFinger1_R
+  - first:
+      1: 100102
+    second: RingFinger2_L
+  - first:
+      1: 100104
+    second: RingFinger2_R
+  - first:
+      1: 100106
+    second: RingFinger3_L
+  - first:
+      1: 100108
+    second: RingFinger3_L_end
+  - first:
+      1: 100110
+    second: RingFinger3_R
+  - first:
+      1: 100112
+    second: RingFinger3_R_end
+  - first:
+      1: 100114
+    second: //RootNode
+  - first:
+      1: 100116
+    second: Spine
+  - first:
+      1: 100118
+    second: Thumb0_L
+  - first:
+      1: 100120
+    second: Thumb0_R
+  - first:
+      1: 100122
+    second: Thumb1_L
+  - first:
+      1: 100124
+    second: Thumb1_R
+  - first:
+      1: 100126
+    second: Thumb2_L
+  - first:
+      1: 100128
+    second: Thumb2_L_end
+  - first:
+      1: 100130
+    second: Thumb2_R
+  - first:
+      1: 100132
+    second: Thumb2_R_end
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Body
+  - first:
+      4: 400004
+    second: Chest
+  - first:
+      4: 400006
+    second: Head
+  - first:
+      4: 400008
+    second: Head_end
+  - first:
+      4: 400010
+    second: Hips
+  - first:
+      4: 400012
+    second: IndexFinger1_L
+  - first:
+      4: 400014
+    second: IndexFinger1_R
+  - first:
+      4: 400016
+    second: IndexFinger2_L
+  - first:
+      4: 400018
+    second: IndexFinger2_R
+  - first:
+      4: 400020
+    second: IndexFinger3_L
+  - first:
+      4: 400022
+    second: IndexFinger3_L_end
+  - first:
+      4: 400024
+    second: IndexFinger3_R
+  - first:
+      4: 400026
+    second: IndexFinger3_R_end
+  - first:
+      4: 400028
+    second: Left ankle
+  - first:
+      4: 400030
+    second: Left arm
+  - first:
+      4: 400032
+    second: Left elbow
+  - first:
+      4: 400034
+    second: Left knee
+  - first:
+      4: 400036
+    second: Left leg
+  - first:
+      4: 400038
+    second: Left shoulder
+  - first:
+      4: 400040
+    second: Left toe
+  - first:
+      4: 400042
+    second: Left toe_end
+  - first:
+      4: 400044
+    second: Left wrist
+  - first:
+      4: 400046
+    second: LittleFinger1_L
+  - first:
+      4: 400048
+    second: LittleFinger1_R
+  - first:
+      4: 400050
+    second: LittleFinger2_L
+  - first:
+      4: 400052
+    second: LittleFinger2_R
+  - first:
+      4: 400054
+    second: LittleFinger3_L
+  - first:
+      4: 400056
+    second: LittleFinger3_L_end
+  - first:
+      4: 400058
+    second: LittleFinger3_R
+  - first:
+      4: 400060
+    second: LittleFinger3_R_end
+  - first:
+      4: 400062
+    second: MiddleFinger1_L
+  - first:
+      4: 400064
+    second: MiddleFinger1_R
+  - first:
+      4: 400066
+    second: MiddleFinger2_L
+  - first:
+      4: 400068
+    second: MiddleFinger2_R
+  - first:
+      4: 400070
+    second: MiddleFinger3_L
+  - first:
+      4: 400072
+    second: MiddleFinger3_L_end
+  - first:
+      4: 400074
+    second: MiddleFinger3_R
+  - first:
+      4: 400076
+    second: MiddleFinger3_R_end
+  - first:
+      4: 400078
+    second: Neck
+  - first:
+      4: 400080
+    second: Right ankle
+  - first:
+      4: 400082
+    second: Right arm
+  - first:
+      4: 400084
+    second: Right elbow
+  - first:
+      4: 400086
+    second: Right knee
+  - first:
+      4: 400088
+    second: Right leg
+  - first:
+      4: 400090
+    second: Right shoulder
+  - first:
+      4: 400092
+    second: Right toe
+  - first:
+      4: 400094
+    second: Right toe_end
+  - first:
+      4: 400096
+    second: Right wrist
+  - first:
+      4: 400098
+    second: RingFinger1_L
+  - first:
+      4: 400100
+    second: RingFinger1_R
+  - first:
+      4: 400102
+    second: RingFinger2_L
+  - first:
+      4: 400104
+    second: RingFinger2_R
+  - first:
+      4: 400106
+    second: RingFinger3_L
+  - first:
+      4: 400108
+    second: RingFinger3_L_end
+  - first:
+      4: 400110
+    second: RingFinger3_R
+  - first:
+      4: 400112
+    second: RingFinger3_R_end
+  - first:
+      4: 400114
+    second: //RootNode
+  - first:
+      4: 400116
+    second: Spine
+  - first:
+      4: 400118
+    second: Thumb0_L
+  - first:
+      4: 400120
+    second: Thumb0_R
+  - first:
+      4: 400122
+    second: Thumb1_L
+  - first:
+      4: 400124
+    second: Thumb1_R
+  - first:
+      4: 400126
+    second: Thumb2_L
+  - first:
+      4: 400128
+    second: Thumb2_L_end
+  - first:
+      4: 400130
+    second: Thumb2_R
+  - first:
+      4: 400132
+    second: Thumb2_R_end
+  - first:
+      21: 2100000
+    second: Material.006
+  - first:
+      43: 4300000
+    second: Body
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Body
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -176,25 +452,32 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -203,10 +486,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: Hips
       humanName: Hips
@@ -959,13 +1242,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
