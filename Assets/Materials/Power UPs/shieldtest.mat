@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: justwhite
+  m_Name: shieldtest
   m_Shader: {fileID: 4800000, guid: 917b37092bae034459c28c00a3a19b54, type: 3}
   m_ShaderKeywords: VIGNETTE_MASKED _COLOROVERLAY_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     _SUNDISK_SIMPLE
@@ -1584,7 +1584,7 @@ Material:
     - footer_youtube: 0
     - m_LockingInfo: 1
     - m_ParallaxMap: 0
-    - m_Special_Effects: 1
+    - m_Special_Effects: 0
     - m_end_Alpha: 0
     - m_end_BonusSliders: 0
     - m_end_CenterOutEmission: 0
@@ -1650,7 +1650,7 @@ Material:
     - m_lightingOptions: 0
     - m_mainOptions: 1
     - m_outlineOptions: 0
-    - m_renderingOptions: 1
+    - m_renderingOptions: 0
     - m_start_Alpha: 0
     - m_start_BonusSliders: 0
     - m_start_CenterOutEmission: 0
@@ -1687,7 +1687,7 @@ Material:
     - m_start_emission1Options: 0
     - m_start_emissionOptions: 0
     - m_start_flipBook: 0
-    - m_start_glitter: 1
+    - m_start_glitter: 0
     - m_start_glitterRandom: 0
     - m_start_glowInDarkEmissionOptions: 0
     - m_start_glowInDarkEmissionOptions1: 0

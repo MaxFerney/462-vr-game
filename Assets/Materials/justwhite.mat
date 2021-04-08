@@ -9,8 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: justwhite
   m_Shader: {fileID: 4800000, guid: 917b37092bae034459c28c00a3a19b54, type: 3}
-  m_ShaderKeywords: VIGNETTE_MASKED _COLOROVERLAY_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
-    _SUNDISK_SIMPLE
+  m_ShaderKeywords: VIGNETTE_MASKED _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -189,7 +188,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0b021ae2081d45541a752b1d7ad0d570, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Matcap:
@@ -483,7 +482,7 @@ Material:
     - _CutoffAnimated: 0
     - _DebugCameraData: 0
     - _DebugCameraDataAnimated: 0
-    - _DebugEnabled: 1
+    - _DebugEnabled: 0
     - _DebugLightingData: 0
     - _DebugLightingDataAnimated: 0
     - _DebugMeshData: 0
@@ -851,7 +850,7 @@ Material:
     - _GlitterColorMapUVAnimated: 0
     - _GlitterContrast: 300
     - _GlitterContrastAnimated: 0
-    - _GlitterEnable: 1
+    - _GlitterEnable: 0
     - _GlitterEnableAnimated: 0
     - _GlitterFrequency: 300
     - _GlitterFrequencyAnimated: 0
@@ -1729,7 +1728,7 @@ Material:
     - _ClearCoatMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearCoatSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearCoatTint: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8396226, g: 0.42334458, b: 0.1782218, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
     - _DecalMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _DecalPosition: {r: 0.5, g: 0.5, b: 0, a: 0}
