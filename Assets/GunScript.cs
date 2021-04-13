@@ -50,7 +50,13 @@ public class GunScript : MonoBehaviour
         if (Physics.Raycast(gunTip.transform.position, gunTip.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            Gun.GetComponent<MeshRenderer>().enabled = false;
+
+            //Gun.GetComponent<MeshRenderer>().enabled = false;
+
+            Target target = hit.transform.GetComponent<Target>();
+            if (target != null){
+                target.takeDamage(damage);
+            }
         }
     }
 }
