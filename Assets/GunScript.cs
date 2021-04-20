@@ -72,6 +72,11 @@ public class GunScript : MonoBehaviour
                 target.takeDamage(damage);
             }
 
+            ShipScript ship = hit.transform.GetComponent<ShipScript>();
+            if (ship != null){
+                ship.damageShip(damage);
+            }
+
             isStoneMat stoneTarget = hit.transform.GetComponent<isStoneMat>();
             if (stoneTarget != null){
                 GameObject stoneImpactGO = Instantiate(impaceOnStone, hit.point, Quaternion.LookRotation(hit.normal));
