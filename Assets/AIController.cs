@@ -7,8 +7,8 @@ public class AIController : MonoBehaviour
     public Transform Player;
     public Transform Ship;
 
-    int MoveSpeed = 4;
-    int MinDist = 5;
+    int MoveSpeed = 1;
+    int MinDist = 2;
 
     void Start()
     {
@@ -17,35 +17,38 @@ public class AIController : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(Player);
 
         if (Vector3.Distance(transform.position, Player.position) <= Vector3.Distance(transform.position, Ship.position))
         {
-
-            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+            transform.LookAt(Player);
 
             if (Vector3.Distance(transform.position, Player.position) <= MinDist)
             {
                 Debug.Log("Damaging Player");
+                //GetComponent<Rigidbody>().velocity = Vector3.zero;
+                //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             }
             else
             {
                 Debug.Log("No Damage");
+                transform.position += transform.forward * MoveSpeed * Time.deltaTime;
             }
 
         }
         else
         {
             transform.LookAt(Ship);
-            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
             if (Vector3.Distance(transform.position, Ship.position) <= MinDist)
             {
-                Debug.Log("Damaging Ship");
+                Debug.Log("Damaging Ship"); 
+                //GetComponent<Rigidbody>().velocity = Vector3.zero;
+                //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             }
             else
             {
                 Debug.Log("No Damage");
+                transform.position += transform.forward * MoveSpeed * Time.deltaTime;
             }
         }
     }
