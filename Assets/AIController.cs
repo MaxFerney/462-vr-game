@@ -5,8 +5,9 @@ using UnityEngine.UI;
 public class AIController : MonoBehaviour
 {
     public Transform Player;
+    public Transform Ship;
+
     int MoveSpeed = 4;
-    int MaxDist = 1;
     int MinDist = 5;
 
     void Start()
@@ -18,16 +19,34 @@ public class AIController : MonoBehaviour
     {
         transform.LookAt(Player);
 
-        if (Vector3.Distance(transform.position, Player.position) >= MinDist)
+        if (Vector3.Distance(transform.position, Player.position) <= Vector3.Distance(transform.position, Ship.position))
         {
 
             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
+            if (Vector3.Distance(transform.position, Player.position) <= MinDist)
             {
-                //Here Call any function U want Like Shoot at here or something
+                Debug.Log("Damaging Player");
+            }
+            else
+            {
+                Debug.Log("No Damage");
             }
 
+        }
+        else
+        {
+            transform.LookAt(Ship);
+            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+
+            if (Vector3.Distance(transform.position, Ship.position) <= MinDist)
+            {
+                Debug.Log("Damaging Ship");
+            }
+            else
+            {
+                Debug.Log("No Damage");
+            }
         }
     }
 }
