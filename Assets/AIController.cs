@@ -7,7 +7,7 @@ public class AIController : MonoBehaviour
     public Transform Player;
     public Transform Ship;
 
-    int MoveSpeed = 4;
+    int MoveSpeed = 1;
     int MinDist = 2;
 
     void Start()
