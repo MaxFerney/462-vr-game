@@ -26,7 +26,7 @@ public class GunScript : MonoBehaviour
     public Camera gunTip;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    public GameObject impaceOnStone;
+    //public GameObject impaceOnStone;
 
     private float nextTimeToFire = 0f;
     // Start is called before the first frame update
@@ -77,11 +77,11 @@ public class GunScript : MonoBehaviour
                 ship.damageShip(damage);
             }
 
-            isStoneMat stoneTarget = hit.transform.GetComponent<isStoneMat>();
-            if (stoneTarget != null){
-                GameObject stoneImpactGO = Instantiate(impaceOnStone, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(stoneImpactGO, 5f);
-            }
+            // isStoneMat stoneTarget = hit.transform.GetComponent<isStoneMat>();
+            // if (stoneTarget != null){
+            //     GameObject stoneImpactGO = Instantiate(impaceOnStone, hit.point, Quaternion.LookRotation(hit.normal));
+            //     Destroy(stoneImpactGO, 5f);
+            // }
 
             if (hit.rigidbody != null)
             {

@@ -24,13 +24,13 @@ public class AIController : MonoBehaviour
 
             if (Vector3.Distance(transform.position, Player.position) <= MinDist)
             {
-                Debug.Log("Damaging Player");
+                //Debug.Log("Damaging Player");
                 //GetComponent<Rigidbody>().velocity = Vector3.zero;
                 //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             }
             else
             {
-                Debug.Log("No Damage");
+                //Debug.Log("No Damage");
                 transform.position += transform.forward * MoveSpeed * Time.deltaTime;
             }
 
@@ -41,13 +41,13 @@ public class AIController : MonoBehaviour
 
             if (Vector3.Distance(transform.position, Ship.position) <= MinDist)
             {
-                Debug.Log("Damaging Ship"); 
+                //Debug.Log("Damaging Ship"); 
                 //GetComponent<Rigidbody>().velocity = Vector3.zero;
                 //GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             }
             else
             {
-                Debug.Log("No Damage");
+                //Debug.Log("No Damage");
                 transform.position += transform.forward * MoveSpeed * Time.deltaTime;
             }
         }
