@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.462final.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\walte\\Desktop\\2020 - 2021\\2021\\462\\462-vr-game\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "G:\\_VRCHAT\\_UNITY STUFF\\462 Final\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "462 Final [Testing]"
