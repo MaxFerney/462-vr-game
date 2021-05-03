@@ -51,5 +51,13 @@ public class ShipScript : MonoBehaviour
         helperScripts.SetActiveAllChildren(ShipDeathObject.transform, true);
         //Destroy(ShipMesh);
     }
+    public bool isAlive()
+    {
+        if (health > 0) 
+        {
+            return true;
+        }
+        return false;
+    }
     
 }
