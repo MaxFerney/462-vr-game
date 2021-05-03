@@ -9,13 +9,20 @@ public class AIController : MonoBehaviour
     private Transform Ship;
 
     public int MoveSpeed = 1;
-    public int AttackDistance = 2;
+    public float Damage = 2f;
+    private float CurrentDamage;
+    private bool CoolingDown = false;
+    public float AttackCooldown = 1f;
+    public int AttackDistance = 5;
+    
+
 
     void Start()
     {
         Ship = ShipObject.GetComponent<Transform>();
+        CurrentDamage = Damage;
     }
-
+    
     void Update()
     {
         if (Ship != null)
@@ -48,9 +55,11 @@ public class AIController : MonoBehaviour
                     if (Ship.gameObject != null)
                     {
                         ShipScript ShipData = Ship.GetComponent<ShipScript>();
-                        if (ShipData.isAlive())
+                        if (ShipData.isAlive() && !CoolingDown)
                         {
-                            ShipData.damageShip(2);
+                            ShipData.damageShip(CurrentDamage);
+                            Debug.Log("Damaged Ship for "+CurrentDamage+" Damage!");
+                            StartCoroutine(JustAttacked());
                         }
                         
                     }
@@ -65,5 +74,15 @@ public class AIController : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator JustAttacked()
+    {
+        CurrentDamage = 0f;
+        CoolingDown = true;
+        Debug.Log("Waiting to Attack...");
+        yield return new WaitForSeconds(AttackCooldown);
+        Debug.Log("Ready to Attack!!!");
+        CurrentDamage = Damage;
+        CoolingDown = false;
     }
 }

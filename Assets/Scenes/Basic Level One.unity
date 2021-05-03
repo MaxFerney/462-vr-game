@@ -398,7 +398,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &165392693
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -592,7 +594,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &273077956
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2325,7 +2329,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &850787848
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2745,7 +2751,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &930688152
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3961,7 +3969,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &1327981380
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4091,7 +4101,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &1357805556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4495,7 +4507,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &1485629448
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6132,7 +6146,9 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
-  AttackDistance: 2
+  Damage: 1
+  AttackCooldown: 1
+  AttackDistance: 3
 --- !u!136 &2048435266
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6480,6 +6496,8 @@ MonoBehaviour:
   Player: {fileID: 7546534918995364299}
   ShipObject: {fileID: 4601121154840263208}
   MoveSpeed: 1
+  Damage: 10
+  AttackCooldown: 3
   AttackDistance: 5
 --- !u!54 &390914183377285965
 Rigidbody:
