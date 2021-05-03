@@ -37,7 +37,7 @@ public class GunScript : MonoBehaviour
     }
     public void TriggerUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource){
         //Debug.Log("Trigger is Up");
-        Gun.GetComponent<MeshRenderer>().enabled = true;
+        //Gun.GetComponent<MeshRenderer>().enabled = true;
     }
     public void TriggerDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
