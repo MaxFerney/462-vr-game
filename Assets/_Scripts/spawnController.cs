@@ -23,7 +23,10 @@ public class spawnController : MonoBehaviour
         //Resources.Load("BasicGolem")
         if(SpawnPoints.Length > 0)
         {
-            GameObject NewGolem = Instantiate(StandardGolem, SpawnPoints[Random.Range(0, SpawnPoints.Length)]);
+            Transform newSpawnTransform = SpawnPoints[Random.Range(0, SpawnPoints.Length)];
+            //Vector3 newspawnpos = newSpawnTransform.position;
+            //Vector3 spawnpos = new Vector3(newSpawnTransform.position.x, newSpawnTransform.position.y, newSpawnTransform.position.z);
+            GameObject NewGolem = Instantiate( StandardGolem, newSpawnTransform.position, newSpawnTransform.rotation);
             Target TargetInfo = NewGolem.GetComponent<Target>();
             if(TargetInfo != null)
             {
@@ -41,6 +44,7 @@ public class spawnController : MonoBehaviour
         {
             
             SpawnNewEnemy(NewObject, SpawnPoints);
+            Debug.Log(SpawnPoints[0]);
             //StartCoroutine(SpawnCooldown(cooldown));
             
             
