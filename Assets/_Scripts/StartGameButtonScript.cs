@@ -28,7 +28,9 @@ public class StartGameButtonScript : MonoBehaviour
         //player.rotation = newSpawn.rotation;
         //player.localScale = newSpawn.localScale;
         gunObject.SetActive(true);
-
-        spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
+        for (var i = 0; i < 3; i++)
+        {
+            spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
+        }
     }
 }
