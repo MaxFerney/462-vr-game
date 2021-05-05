@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class AIController : MonoBehaviour
 {
-    public Transform Player;
-    public GameObject ShipObject;
+    private GameObject PlayerObject;
+    private Transform Player;
+    private GameObject ShipObject;
     private Transform Ship;
 
     public int MoveSpeed = 1;
@@ -19,6 +20,9 @@ public class AIController : MonoBehaviour
 
     void Start()
     {
+        PlayerObject = GameObject.Find("Player");
+        ShipObject = GameObject.Find("Ship");
+        Player = PlayerObject.GetComponent<Transform>();
         Ship = ShipObject.GetComponent<Transform>();
         CurrentDamage = Damage;
     }
