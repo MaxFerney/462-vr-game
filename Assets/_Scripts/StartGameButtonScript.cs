@@ -7,6 +7,10 @@ public class StartGameButtonScript : MonoBehaviour
     public Transform player;
     public Transform newSpawn;
     public GameObject gunObject;
+
+    public GameObject StandardGolem;
+    public Transform[] SpawnPoints;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +28,7 @@ public class StartGameButtonScript : MonoBehaviour
         //player.rotation = newSpawn.rotation;
         //player.localScale = newSpawn.localScale;
         gunObject.SetActive(true);
+
+        spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
     }
 }
