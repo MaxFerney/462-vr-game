@@ -58,7 +58,7 @@ public class AIController : MonoBehaviour
                         if (ShipData.isAlive() && !CoolingDown)
                         {
                             ShipData.damageShip(CurrentDamage);
-                            Debug.Log("Damaged Ship for "+CurrentDamage+" Damage!");
+                            //Debug.Log("Damaged Ship for "+CurrentDamage+" Damage!");
                             StartCoroutine(JustAttacked());
                         }
                         
@@ -79,9 +79,9 @@ public class AIController : MonoBehaviour
     {
         CurrentDamage = 0f;
         CoolingDown = true;
-        Debug.Log("Waiting to Attack...");
+        //Debug.Log("Waiting to Attack...");
         yield return new WaitForSeconds(AttackCooldown);
-        Debug.Log("Ready to Attack!!!");
+        //Debug.Log("Ready to Attack!!!");
         CurrentDamage = Damage;
         CoolingDown = false;
     }
