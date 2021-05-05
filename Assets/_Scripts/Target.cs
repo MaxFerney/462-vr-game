@@ -32,12 +32,6 @@ public class Target : MonoBehaviour
         {
             //spawnController.enemyDie();
         }
-        Destroy(gameObject);
-        for (int i = 0; i < 2; i ++)
-        {
-            Debug.Log("Do the thing"); 
-            spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
-            await Task.Delay(1000);
-        }
+        Destroy(gameObject); 
     }
 }
