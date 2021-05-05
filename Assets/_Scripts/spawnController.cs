@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class spawnController : MonoBehaviour
 {
@@ -16,18 +17,23 @@ public class spawnController : MonoBehaviour
     //public int getCurrentEnemyAmount(){return currentEnemyAmount;}
     //public void enemyDie(){currentEnemyAmount-=1;}
     //public List<GameObject> getCurrentEnemyObjects(){return CurrentEnemyObjects;}
+
     public static void SpawnNewEnemy(GameObject StandardGolem, Transform[] SpawnPoints)
     {
-        var canSpawn = true;
-        if (canSpawn)
+        if(SpawnPoints.Length > 0)
         {
-            if(SpawnPoints.Length > 0)
-            {
-                GameObject newEnemy = Instantiate(StandardGolem, SpawnPoints[Random.Range(0, SpawnPoints.Length)]);
-            }
+            Instantiate(Resources.Load("BasicGolem"), SpawnPoints[Random.Range(0, SpawnPoints.Length)]);
         }
     }
 
+    public async static void KillOneSpawnMore(GameObject NewObject, Transform[] SpawnPoints, int numToSpawn=2, int msDelay=1000)
+    {
+        for (var i = 0; i < numToSpawn; i++)
+        {
+            SpawnNewEnemy(NewObject, SpawnPoints);
+            await Task.Delay(msDelay);
+        }
+    }
     //public static IEnumerator SpawnCooldown()
     //{
     //    canSpawn = false;

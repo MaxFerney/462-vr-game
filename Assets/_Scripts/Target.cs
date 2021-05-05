@@ -24,13 +24,13 @@ public class Target : MonoBehaviour
             Die();
         }
     }
-    async void Die()
+    void Die()
     {
         var thisObject = gameObject;
         AIController isGolem = thisObject.transform.GetComponent<AIController>();
         if (isGolem != null)
         {
-            //spawnController.enemyDie();
+            spawnController.KillOneSpawnMore(thisObject, SpawnPoints);
         }
         Destroy(gameObject); 
     }
