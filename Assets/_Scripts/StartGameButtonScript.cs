@@ -17,7 +17,7 @@ public class StartGameButtonScript : MonoBehaviour
         player.position = new Vector3(newSpawn.position.x, newSpawn.position.y, newSpawn.position.z);
 
         gunObject.SetActive(true);
-        for (var i = 0; i < 3; i++)
+        for (var i = 0; i < 10; i++)
         {
             spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
             await Task.Delay(1000);
