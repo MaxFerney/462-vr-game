@@ -3008,6 +3008,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  StandardGolem: {fileID: 902445756}
+  SpawnPoints:
+  - {fileID: 1339844584}
+  - {fileID: 9841252}
+  - {fileID: 1517221678}
+  - {fileID: 1661503358}
+  - {fileID: 827164885}
+  - {fileID: 1153652067}
+  - {fileID: 2100032490}
+  - {fileID: 1961768500}
 --- !u!65 &902445759
 BoxCollider:
   m_ObjectHideFlags: 0
