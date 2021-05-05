@@ -24,7 +24,7 @@ public class Target : MonoBehaviour
     public void takeDamage (float amount)
     {
         currentHealth -= amount;
-        Debug.Log(currentHealth);
+        //Debug.Log(currentHealth);
         if (currentHealth <= 0f)
         {
             Die();
@@ -37,9 +37,9 @@ public class Target : MonoBehaviour
         AIController isGolem = thisObject.transform.GetComponent<AIController>();
         if (isGolem != null)
         {
-            SpawningController.KillOneSpawnMore(thisObject, SpawnPoints);
+            SpawningController.KillOneSpawnMore(thisObject, SpawnPoints, 2, (health/2f)+2f);
         }
         Destroy(thisObject); 
-        Debug.Log("I've been destroyed!");
+        //Debug.Log("I've been destroyed!");
     }
 }

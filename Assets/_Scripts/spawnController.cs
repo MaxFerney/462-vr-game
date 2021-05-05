@@ -18,7 +18,7 @@ public class spawnController : MonoBehaviour
     //public void enemyDie(){currentEnemyAmount-=1;}
     //public List<GameObject> getCurrentEnemyObjects(){return CurrentEnemyObjects;}
 
-    public void SpawnNewEnemy(GameObject StandardGolem, Transform[] SpawnPoints)
+    public void SpawnNewEnemy(GameObject StandardGolem, Transform[] SpawnPoints, float newHealth=10f)
     {
         //Resources.Load("BasicGolem")
         if(SpawnPoints.Length > 0)
@@ -32,18 +32,28 @@ public class spawnController : MonoBehaviour
             {
                 TargetInfo.SpawnPoints = SpawnPoints;
                 TargetInfo.StandardGolem = StandardGolem;
+                if (newHealth >= 10f)
+                {
+                    TargetInfo.health = newHealth;
+                }
+                else
+                {
+                    TargetInfo.health=10f;
+                }
+                
+                
             }
             
         }
     }
 
-    public void KillOneSpawnMore(GameObject NewObject, Transform[] SpawnPoints, int numToSpawn=2)
+    public void KillOneSpawnMore(GameObject NewObject, Transform[] SpawnPoints, int numToSpawn=2, float newHealth=10f)
     {
         for (var i = 0; i < numToSpawn; i++)
         {
             
-            SpawnNewEnemy(NewObject, SpawnPoints);
-            Debug.Log(SpawnPoints[0]);
+            SpawnNewEnemy(NewObject, SpawnPoints, newHealth);
+            //Debug.Log(SpawnPoints[0]);
             //StartCoroutine(SpawnCooldown(cooldown));
             
             
