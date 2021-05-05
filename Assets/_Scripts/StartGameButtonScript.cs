@@ -19,7 +19,17 @@ public class StartGameButtonScript : MonoBehaviour
         gunObject.SetActive(true);
         for (var i = 0; i < 1; i++)
         {
-            spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
+            if(SpawnPoints.Length > 0)
+            {
+                GameObject NewGolem = Instantiate(StandardGolem, SpawnPoints[Random.Range(0, SpawnPoints.Length)]);
+                Target TargetInfo = NewGolem.GetComponent<Target>();
+                if(TargetInfo != null)
+                {
+                    TargetInfo.SpawnPoints = SpawnPoints;
+                    TargetInfo.StandardGolem = StandardGolem;
+                }
+                
+            }
             await Task.Delay(1000);
         }
     }

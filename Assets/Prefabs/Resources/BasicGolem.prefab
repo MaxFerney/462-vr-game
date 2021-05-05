@@ -353,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 4882375590755674612}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4882375591343120292}
   - {fileID: 4882375589318464780}
@@ -375,8 +375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd586efba6a26045b90dc8b88eaca42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  ShipObject: {fileID: 0}
   MoveSpeed: 1
   Damage: 2
   AttackCooldown: 1

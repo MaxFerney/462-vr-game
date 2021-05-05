@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    private float currentHealth;
 
     public GameObject StandardGolem;
     public Transform[] SpawnPoints;
 
+    private GameObject SpawningControllerObject;
+    private spawnController SpawningController;
+
     void Start()
     {
-        //this.myObject = gameObject;
+        SpawningControllerObject = GameObject.Find("spawn controller");
+        SpawningController = SpawningControllerObject.GetComponent<spawnController>();
+        currentHealth = health;
     }
 
     public void takeDamage (float amount)
     {
-        health -= amount;
-        Debug.Log(health);
-        if (health <= 0f)
+        currentHealth -= amount;
+        Debug.Log(currentHealth);
+        if (currentHealth <= 0f)
         {
             Die();
         }
@@ -27,11 +33,13 @@ public class Target : MonoBehaviour
     void Die()
     {
         var thisObject = gameObject;
+        
         AIController isGolem = thisObject.transform.GetComponent<AIController>();
         if (isGolem != null)
         {
-            spawnController.KillOneSpawnMore(thisObject, SpawnPoints);
+            SpawningController.KillOneSpawnMore(thisObject, SpawnPoints);
         }
-        Destroy(gameObject); 
+        Destroy(thisObject); 
+        Debug.Log("I've been destroyed!");
     }
 }
