@@ -32,7 +32,6 @@ public class spawnController : MonoBehaviour
             {
                 TargetInfo.SpawnPoints = SpawnPoints;
                 TargetInfo.StandardGolem = StandardGolem;
-                TargetInfo.health = 50f;
             }
             
         }

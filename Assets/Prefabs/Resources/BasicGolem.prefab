@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccb791780b368864c8a8b1acd937a706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 20
   StandardGolem: {fileID: 4882375590755674612}
   SpawnPoints:
   - {fileID: 0}
