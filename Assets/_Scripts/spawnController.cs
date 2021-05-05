@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class spawnController : MonoBehaviour
 {
-    //public GameObject StandardGolem;
-    //public Transform[] SpawnPoints;
+    
     //public int maxEnemies = 10;
     //private float spawnCooldown = 1f;
     //private bool canSpawn = true;
@@ -26,11 +25,10 @@ public class spawnController : MonoBehaviour
             {
                 GameObject newEnemy = Instantiate(StandardGolem, SpawnPoints[Random.Range(0, SpawnPoints.Length)]);
             }
-            //currentEnemyAmount += 1;
-            //StartCoroutine(SpawnCooldown());
         }
     }
-    //IEnumerator SpawnCooldown()
+
+    //public static IEnumerator SpawnCooldown()
     //{
     //    canSpawn = false;
     //    yield return new WaitForSeconds(spawnCooldown);

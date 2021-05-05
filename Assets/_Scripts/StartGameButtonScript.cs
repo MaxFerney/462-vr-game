@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class StartGameButtonScript : MonoBehaviour
 {
@@ -11,26 +12,15 @@ public class StartGameButtonScript : MonoBehaviour
     public GameObject StandardGolem;
     public Transform[] SpawnPoints;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void StartGameFromMenu()
+    async public void StartGameFromMenu()
     {
         player.position = new Vector3(newSpawn.position.x, newSpawn.position.y, newSpawn.position.z);
-        //player.rotation = newSpawn.rotation;
-        //player.localScale = newSpawn.localScale;
+
         gunObject.SetActive(true);
         for (var i = 0; i < 3; i++)
         {
             spawnController.SpawnNewEnemy(StandardGolem, SpawnPoints);
+            await Task.Delay(1000);
         }
     }
 }
