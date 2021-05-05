@@ -14459,7 +14459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireShot:
-    actionPath: /actions/default/in/FireGun
+    actionPath: /actions/default/in/InteractUI
     needsReinit: 0
   handType: 2
   Gun: {fileID: 2228084833664546531}

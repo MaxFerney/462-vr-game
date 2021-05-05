@@ -31,7 +31,7 @@ public class AIController : MonoBehaviour
             {
                 transform.LookAt(Player);
 
-                if (Vector3.Distance(transform.position, Player.position) <= AttackDistance)
+                if (Vector3.Distance(transform.position, Player.position) <= AttackDistance/2)
                 {
                     //Debug.Log("Damaging Player");
                     
